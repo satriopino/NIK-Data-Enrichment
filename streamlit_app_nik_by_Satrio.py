@@ -10,6 +10,8 @@ coord = pd.read_csv('coordinate.csv')
 
 # --- ROW 1 ---
 st.write('# Customers Demography Dashboard')
+st.write('by **Muhammad Satrio Pinoto Negoro**')
+st.write('**Linkedin**: https://www.linkedin.com/in/satriopino/')
 st.write("""Welcome to the Customers Demography Dashboard – your comprehensive view of our customer base's
           demographics. This interactive dashboard provides valuable insights into the diverse 
          characteristics of our customers, allowing you to explore and understand the composition of our 
