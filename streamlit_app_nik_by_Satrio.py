@@ -12,7 +12,7 @@ coord = pd.read_csv('coordinate.csv')
 st.write('# Customers Demographic Dashboard')
 st.write('by **Muhammad Satrio Pinoto Negoro**')
 st.write('**Linkedin**: https://www.linkedin.com/in/satriopino/')
-st.write("""Welcome to the Customers Demography Dashboard – your comprehensive view of our customer base's
+st.write("""Welcome to the Customers Demographic Dashboard – your comprehensive view of our customer base's
           demographics. This interactive dashboard provides valuable insights into the diverse 
          characteristics of our customers, allowing you to explore and understand the composition of our 
          audience.""")
