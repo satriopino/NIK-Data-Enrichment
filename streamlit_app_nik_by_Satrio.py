@@ -76,7 +76,7 @@ customer_per_province = pd.crosstab(index=cust_income['province'],
 ### plot Customer Count per Province
 customer_per_province_plot = px.bar(customer_per_province.reset_index().tail(10), x='Total Customers', y='province', 
             labels={'index': 'Province', 'province': 'Province'},
-             color_discrete_sequence=['black'])
+             color_discrete_sequence=['green'])
 
 col1.plotly_chart(customer_per_province_plot, use_container_width=True)
 
@@ -104,7 +104,7 @@ customer_gender_prof_plot = px.bar(customer_age.groupby(['Profession', 'gender']
              x='count', y='Profession', color='gender', barmode='group',
              labels={'count': 'Customer Count'},
              category_orders={'gender': ['Male', 'Female']},
-             color_discrete_map={'Male': 'black', 'Female': 'gray'})
+             color_discrete_map={'Male': 'green', 'Female': 'lightgreen'})
 
 col2.plotly_chart(customer_gender_prof_plot, use_container_width=True)
 
@@ -130,7 +130,7 @@ average_spending_per_generation = cust_gender.groupby('province')['Spending_Scor
 spending_per_province_plot = px.bar(average_spending_per_generation, 
                                     x='Spending_Score', 
                                     y='province',
-                                    color_discrete_sequence=['black'])
+                                    color_discrete_sequence=['green'])
 
 spending_per_province_plot.update_layout(
     xaxis_title='Average Spending Score',
@@ -144,7 +144,7 @@ customer_per_generation_plot = px.bar(customer_merge['generation'].value_counts(
                                       x='count', 
                                       y='generation', 
                                       labels={'index': 'Generation', 'generation': 'Customer Count'}, 
-                                      color_discrete_sequence=['black'])
+                                      color_discrete_sequence=['green'])
 customer_per_generation_plot.update_layout(
     yaxis_title='Generation',
     xaxis_title='Customer Count')
